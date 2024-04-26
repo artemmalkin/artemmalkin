@@ -1,0 +1,452 @@
+/* Стили для общих элементов, layout и типографики */
+:root {
+  --color-primary: #FFFFFF; /* основной цвет */
+  --color-secondary: #06E4D7; /* вторичный цвет */
+  --color-accent: #28a745; /* акцентный цвет */
+  --color-text: #333; /* цвет текста */
+  --color-background: #f8f9fa; /* цвет фона */
+  --color-border: #dee2e6; /* цвет границ */
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+.color-secondary {
+  color: var(--color-secondary);
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:  "Tajawal", sans-serif;
+  color: var(--color-primary);
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 96px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 68px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 700;
+}
+  
+footer, section {
+  width: 100vw;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+}
+
+.content {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+nav {
+  /* Стили для навигации */
+  display: flex;
+  margin: 3em auto;
+  justify-content: space-between;
+  
+}
+
+nav div {
+  margin-top: auto;
+}
+
+.main, .about-us, .our-services, .product-categories, .services, .our-clients, .reviews {
+  /* Дополнительные стили для секций */
+}
+
+.btn {
+  border: 2px solid var(--color-secondary);
+  color: white;
+  cursor: pointer;
+  width: fit-content;
+  padding: .5em 2em;
+}
+
+.main {
+  background-image: url('../img/section_1.png');
+  background-color: #D9D9D9;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.main h4 {
+  margin: auto;
+}
+
+.about-us {
+  background-image: url('../img/section_2.png');
+  background-color: #000914;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* .about-us .block, .about-us .block-pharagraph {
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position: center center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#block_1 {
+  background-image: url('../img/border_1.png');
+}
+
+#block_2 {
+  background-image: url('../img/border_2.png');
+} */
+
+#block_1, #block_2 {
+  width: 250px;
+  height: 150px;
+}
+
+#block_3 {
+  width: auto;
+  height: auto;
+  font-size: xx-large;
+  font-weight: 400;
+  padding: 1em;
+  text-align: left;
+}
+
+#block_4 {
+
+}
+
+#block_5 {
+
+}
+
+
+.block {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block {
+  width: 250px;
+  left: 10%;
+  transform: translateY(0%);
+  border: 6px solid var(--color-secondary);
+  border-top: none;
+}
+
+.block::before, .block::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 6px;
+  background: var(--color-secondary);
+}
+.block::before {
+  left: 0;
+  width: 5%;
+}
+.block::after {
+  right: 0;
+  width: 65%;
+}
+
+.block span {
+  width: 20%;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  transform: translateY(-50%);
+  color: var(--color-secondary);
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+}
+
+#block_3 span {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.about-us .blocks {
+  gap: 5em;
+  display: flex;
+  justify-content: space-between;
+  height: 60%;
+}
+
+.our-services h3 {
+  text-align: center;
+}
+
+.our-services h3 span {
+  text-decoration: underline;
+  text-decoration-color: var(--color-secondary);
+  text-decoration-thickness:10px;
+  text-underline-offset: 20px;
+}
+
+.product-categories {
+  height: auto;
+}
+.product-categories .products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.product-categories .product {
+  border: var(--color-secondary) solid 5px;
+  border-radius: 20px;
+  width: 300px;
+  height: 180px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.product-categories .product .title {
+  margin: auto;
+}
+
+.note {
+  height: auto;
+  padding-top: 100px;
+}
+
+.note .content {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: auto;
+}
+
+.note .block {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 2em;
+}
+.note .title {
+  color: var(--color-secondary);
+  text-align: left;
+  margin-right: auto;
+  margin-bottom: 1em;
+
+}
+
+.note .text {
+
+}
+
+/* .note .block {
+  width: calc(100%/2 + 20px);
+  height: 300px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position: center center;
+} */
+
+.contacts {
+  height: auto;
+  padding-bottom: 5em;
+}
+
+.contacts .content {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contacts .info {
+  margin-top: 4em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contacts .info .info-item {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.contacts .title {
+  margin-left: .3em;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.our-services , .product-categories, .note, .contacts {
+  background-color: #09111B;
+}
+
+/* Стили для подвала */
+footer {
+  background-color: var(--color-secondary);
+  color:black;
+  height: 10vh;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+footer .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+/* Медиа-запросы и адаптивные стили если необходимо */
+@media (max-width: 1280px) {
+  /* Стили для мобильной версии */
+
+  .content {
+    width: 100%;
+  }
+  h3, h2 {
+    text-align: center;
+  }
+
+  .main {
+    height: auto;
+    padding-bottom: 5em;
+  }
+
+  .main nav {
+    width: 90%;
+  }
+
+  .about-us {
+    padding-bottom: 5em;
+  }
+
+  .about-us .content {
+    width: 90%;
+  }
+
+  .block span {
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    transform: translateY(-50%);
+    color: var(--color-secondary);
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .block::before {
+    left: 0;
+    width: 10%;
+  }
+  .block::after {
+    right: 0;
+    width: 50%;
+  }
+
+  #block_3 span {
+    font-size: larger;
+    font-weight: 400;
+  }
+
+  .about-us .blocks {
+
+  }
+
+  /* .about-us .blocks div {
+    margin: 0 auto;
+  } */
+
+  .product-categories .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Две колонки одинаковой ширины */
+    gap: 20px; /* Расстояние между колонками и строками */
+    justify-content: center; /* Выравнивание сетки по горизонтали */
+    width: fit-content; /* Ширина контейнера по ширине содержимого */
+    margin: 0 auto; /* Выравнивание контейнера по центру страницы */
+  }
+
+  .product-categories .product {
+    width: calc(100vw / 3);
+  }
+
+  .our-services, .about-us {
+    height: auto;
+  }
+
+  .contacts .info {
+    justify-content: center;
+    width: 90%;
+    margin: 2em auto;
+    gap: 5em;
+  }
+
+  /* .note .content {
+    display: block;
+    justify-content: center;
+    margin: auto;
+  } */
+
+  /* .note .block {
+    margin: 0 auto;
+  } */
+}
