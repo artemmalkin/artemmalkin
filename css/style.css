@@ -90,6 +90,7 @@ nav div {
 
 .main, .about-us, .our-services, .product-categories, .services, .our-clients, .reviews {
   /* Дополнительные стили для секций */
+  margin-top: -2px;
 }
 
 .btn {
