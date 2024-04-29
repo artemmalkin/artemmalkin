@@ -52,8 +52,9 @@ class Carousel {
       
       carouselItem.append(carouselItemInfo);
       const carouselItemTitle =  document.createElement('div');
-      const carouselItemButton =  document.createElement('h6');
-      carouselItemInfo.append(carouselItemTitle, carouselItemButton);
+      // const carouselItemButton =  document.createElement('h6');
+      carouselItemInfo.append(carouselItemTitle);
+      // carouselItemInfo.append(carouselItemTitle, carouselItemButton);
       
       
       // Add item attributes
@@ -64,8 +65,8 @@ class Carousel {
       carouselItemInfo.className = "carousel-info";
       carouselItemTitle.className = "carousel-title";
       carouselItemTitle.innerText = item.title;
-      carouselItemButton.className = "btn";
-      carouselItemButton.innerText = "Подробнее"
+      // carouselItemButton.className = "btn";
+      // carouselItemButton.innerText = "Подробнее"
 
       carouselItem.style.backgroundImage = `url('img/carousel/image${index + 1}.png')`
       carouselItem.style.backgroundSize = 'cover';
