@@ -81,14 +81,13 @@ nav {
   display: flex;
   margin: 3em auto;
   justify-content: space-between;
-  
 }
 
 nav div {
   margin-top: auto;
 }
 
-.main, .about-us, .our-services, .product-categories, .services, .our-clients, .reviews {
+.main, .about-us, .our-services, .product-categories, .note, .contacts {
   /* Дополнительные стили для секций */
   margin-top: -2px;
 }
